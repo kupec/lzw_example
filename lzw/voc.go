@@ -6,13 +6,6 @@ type WordTree struct {
 	children []*WordTree
 }
 
-type VocWord []byte
-
-type VocEntry struct {
-	base   uint16
-	suffix byte
-}
-
 type Voc struct {
 	wordTree  *WordTree
 	nextIndex uint16
